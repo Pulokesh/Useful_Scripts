@@ -3,7 +3,10 @@ import os
 import math
 from  numpy import *
 
-
+##
+# This python script generates gnuplot script which fits initial excitation energies (A_i)
+# with relaxation time (tau_i)
+# The exponential decay function to which the curve is fitted, is E(t) = E*exp(t/tau)
 filename = "sh_en_ex"
 no_ex = 31
 fout = open("plt_gen", 'w')
