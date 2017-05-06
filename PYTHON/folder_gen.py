@@ -23,7 +23,7 @@ def clone_folder():
 ###################################
 
 def check_job_status(i,ni):
-    f = open("run%i/x0.scf.out"%(i*ni+ni-2),"r")
+    f = open("run%i/x0.scf.out"%(i*ni-1),"r")
     A = f.readlines()
     f.close()
     status = 0
